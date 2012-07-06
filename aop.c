@@ -278,7 +278,6 @@ static void add_pointcut (zval *callback, char *selector, int selector_len, int 
     fci.function_table = EG(function_table);
     fci.function_name = callback;
     fci.symbol_table = NULL;
-    fci.object_ptr= NULL;
     fci.no_separation= 0;
     pc->fci = fci;
     pc->fcic = fcic; 
